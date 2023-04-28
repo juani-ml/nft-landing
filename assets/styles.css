@@ -21,59 +21,126 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    text-decoration: none;
-    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 header {
-    background: var(--secondary);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 65px;
-    padding: 0px 30px 0px 30px;
+  background: var(--secondary);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  padding: 0px 30px 0px 30px;
+  /*
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  */
 }
 
 .logo {
-    height: 40%;
+  height: 40%;
 }
 
 .navbar,
 .navbar-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.navbar{
-    gap:150px;
+.navbar {
+  gap: 150px;
 }
 
 .navbar-list {
-    gap: 30px;
+  gap: 30px;
 }
 
-.navbar-list a{
-    color: var(--text-gray);
-    font-size: 14px;
+.navbar-list a {
+  color: var(--text-gray);
+  font-size: 14px;
 }
 
 .navbar-list li:first-child > a {
-    color: var(--text-white);
-    font-weight: 600;
+  color: var(--text-white);
+  font-weight: 600;
 }
 
 .cart-icon {
-    font-weight: 600;
-    border-radius: 10px;
-    height: 30px;
-    padding: 5px 10px;
-    margin-right: 1rem;
-    color: var(--text-white);
-    cursor: pointer;
+  font-weight: 600;
+  border-radius: 10px;
+  height: 30px;
+  padding: 5px 10px;
+  margin-right: 1rem;
+  color: var(--text-white);
+  cursor: pointer;
+}
+
+/* Main */
+
+/* El main va a servir de contenedor principal de todas las
+secciones y además para darle un fondo a las secciones que van
+a estar limitadas a 1200px máximo y centrarlas en la página para
+resoluciones grandes*/
+
+main {
+  background: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 100%;
+}
+
+/* Hero */
+#hero {
+  margin-top: 65px;
+  padding: 70px 0;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+
+.hero-info h1 {
+  font-size: 48px;
+  width: 80%;
+  min-width: 500px;
+  font-weight: 800;
+  color: var(--text-white);
+}
+
+.hero-info p {
+  font-size: 14px;
+  width: 70%;
+  color: var(--text-gray);
+}
+
+.hero-info p > span {
+  font-weight: 800;
+}
+
+.hero-info a {
+  color: var(--text-white);
+  background-color: var(--primary);
+  width: 120px;
+  padding: 8px 0px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
 }
