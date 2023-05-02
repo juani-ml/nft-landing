@@ -1,7 +1,8 @@
+/* font */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 :root {
-  /* bg colors*/
+  /* bg colors */
   --background: #02050e;
   --primary: #1e50ff;
   --secondary: #272d37;
@@ -11,7 +12,7 @@
   --bg-electric: #f0fbff;
   --nav-bg: #0f1525;
 
-  /* Test Colors */
+  /* Text colors */
   --text-gray: #adb9c7;
   --text-white: #f3f4f6;
 
@@ -37,11 +38,9 @@ header {
   align-items: center;
   height: 65px;
   padding: 0px 30px 0px 30px;
-  /*
-  position: fixed;
-  top: 0;
-  z-index: 2;
-  */
+  /* position: fixed;
+    top: 0;
+    z-index: 2; */
 }
 
 .logo {
@@ -85,10 +84,7 @@ header {
 
 /* Main */
 
-/* El main va a servir de contenedor principal de todas las
-secciones y además para darle un fondo a las secciones que van
-a estar limitadas a 1200px máximo y centrarlas en la página para
-resoluciones grandes*/
+/* El main va a servir de contenedor principal de todas las secciones y además para darle un fondo a las secciones que van a estar limitadas a 1200px máximo y centrarlas en la página para resoluciones grandes */
 
 main {
   background: var(--background);
@@ -143,4 +139,61 @@ main {
   border-radius: 10px;
   font-size: 14px;
   text-align: center;
+}
+
+.hero-card {
+  width: 300px;
+  background: var(--secondary);
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.hero-card-top h3 {
+  font-weight: 600;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hero-card-top span {
+  background-color: var(--primary);
+  text-align: center;
+  width: 50px;
+  padding: 3px 0px;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+.hero-card-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-card-creator {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.hero-card-creator img {
+  height: 40px;
+  width: 40px;
 }
